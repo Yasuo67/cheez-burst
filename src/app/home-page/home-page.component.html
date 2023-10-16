@@ -1,0 +1,175 @@
+<div class="body-section">
+    <div class="content-area">
+
+        <ng-container *ngIf="page == 1">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-1.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Does the pizza not have enough cheese??? Aw, that's sad. Not enough cheese on pizza 
+                is like my life without you...boring. Here, I made this "cheeeeeesy" website to balance 
+                the no cheeezza ..i mean no cheese pizza. Heheheee.
+            </div>
+            <div class="button-area">
+                <div class="yes-btn" (click)="acceptCheese()">Yes, I need the cheese</div>
+                <div class="no-btn" (click)="denyCheese1()">No thankyou!!</div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="Cheese1">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-2.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Are you sure you don't wanna do this??? You aren't interested in going further???
+                It'll make me sad..... Fine , I'll give another chance for you to rethink your decision.
+                Now, choose wisely.
+            </div>
+            <div class="button-area">
+                <div class="yes-btn" (click)="acceptCheese()">Yes, I need the cheese</div>
+                <div class="no-btn" (click)="denyCheese2()">No thankyou!!</div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="Cheese2">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-3.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                HOW DARE YOU!!! NOW YOU DO NOT HAVE ANY OTHER OPTION. YOU HAVE TO CLICK ON OK. 
+                WEEEHUHUHUHUHUHUHUHUH (evil laugh)
+            </div>
+            <div class="button-area">
+                <div class="yes-btn" (click)="acceptCheese()">Yes, I need the cheese</div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="page == 4">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-4.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                It's story time. Once upon a time, a boy was born on this day. I assume that he was 
+                a cute little boy. He grew up somehow (I do not know the details). I assume he was a 
+                good boy who was fond of computer games and anime and some nerdy stuff(maybe). 
+            </div>
+            <div class="page-area">
+                <div (click)="goNextPage()">Next ></div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 5">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-4.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Meanwhile, there was a girl who didn't know any of those. All she knew was to draw 
+                things. She was very dumb, but was smart. She was teachers' pet. She was liked by her
+                friends too. There is lot to tell about this amazing little cute girl. (giggles) 
+            </div>
+            <div class="page-area">
+                <div (click)="goNextPage()">Next ></div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 6">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-5.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                But these both met in the college. They bumped into each other in the college corridor, 
+                just like they show in the films. Just kidding, that's not how they met. They just met. That's 
+                upto the audience(you). And that's the beginning of the story of them.
+            </div>
+            <div class="page-area">
+                <div (click)="goNextPage()">Next ></div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 7">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-6.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                They became good friends. The girl knew a lot from the boy. They sat together, they exchanged
+                numbers, talked a lot. Little did he knew, that the girl liked him. Then came the day where they
+                had a big moment. Yes, they had a kiss.
+            </div>
+            <div class="page-area">
+                <div (click)="goNextPage()">Next ></div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 8">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-7.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Time passed by... They got closer. The girl before even knowing fell in love with him.
+                And finally, all the heavens answering the prayers, they confessed their love to each other.
+                Seeing this the birds started singing and the flowers began dancing, the sky turned pink and it 
+                started raining glitters. Their hearts were filled with joy. The distance didn't stand a chance.
+                That's enough poetry I guess.
+            </div>
+            <div class="page-area">
+                <div (click)="goNextPage()">Next ></div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 9">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-8.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Now, the reveal....the boy in the story was you and the girl was me (incase if you couldn't figure it out).
+                <br>
+                I'm thankful for meeting you. I'm happy for having you. I'm glad that we became friends.
+                I'm glad that you loved me too. Good thing that you were born.  oh my gawwwd..very emosional (wiping tears). 
+                <br>
+                Happy Birthday To Youuuuuuuuuuuu
+                <br>
+                I Lob Youuuuuuuuuuuu
+                <br>
+                Now make a wish and blow the candle. Yayyy!
+            </div>
+            <div class="page-area">
+                <div (click)="goNextPage()">Next ></div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 10">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-9.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Couldn't figure out what to gift you. I could only think of this with my micro brain.
+                I decided to give this gift.I just hope that 
+                it wasn't boring and you read through the entire text (you are gonna have a quiz later on).
+                Come on now open the gift. kishishishsishisshiishsi...
+            </div>
+            <div class="button-area">
+                <div class="yes-btn" (click)="goNextPage()">Tap to reveal the surprise</div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 11">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-10.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Surpriseeeeeeeee..... Yes it's meeee. Why do you need a gift when I'm already there.
+                Hihihihihihihihihi. You wanna send some secret message to me ?? You can write them down below.
+                Make sure you send ok? MAKE SURE YOU SEND A NICE DETAILED CRINGE MESSAGE!!!!!
+                Click the send button and wait for a while. 
+            </div>
+            <textarea id="comments" name="comments" rows="4" cols="39" [(ngModel)]="userComment" placeholder="Write here">
+            </textarea>
+            <div class="button-area">
+                <div class="yes-btn" (click)="sendComment()">Send Secret Message uwu</div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="page == 12">
+            <div class="image-area">
+                <img class="story-img" src="./../../assets/illus/img-4.jpg" alt="img">
+            </div>
+            <div class="text-area">
+                Arigathoooooooooooooooooo for being patient and reading until the end. Muahhhhh. You can come back to Whatsapp and talk to me.
+            </div>
+            
+        </ng-container>
+    </div>
+</div>
+
